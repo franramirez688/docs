@@ -86,9 +86,6 @@ Lets check that everything is fine by building and uploading the blink applicati
 .. code-block:: bash
 
    ~/myproject$ bii arduino:build
-   ...
-   [100%] Built target myuser_myblock_main
-   
    ~/myproject$ bii arduino:upload
    ...
    Writing | ################################################## | 100% 0.00s
