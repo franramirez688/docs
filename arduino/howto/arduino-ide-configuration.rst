@@ -1,19 +1,31 @@
+.. _bii_arduino_ide:
+
 IDE configuration
 =================
 
-Biicode offers integration with `Eclipse <https://www.eclipse.org/downloads/>`_ for Arduino programmers. This way you can work on your biicode project, using the underlying infrastructure and services provided by Eclipse.
+Biicode offers integration with `Eclipse <https://www.eclipse.org/downloads/>`_ for Arduino programmers. It is able to do the appropriate project setup on your behalf. This way you can work on your biicode project, using the underlying infrastructure and services provided by Eclipse.
 
-Run this command (the CMake generator will change depending on your OS)
+This section details the steps you should follow to achieve this integration.
+
+First of all, you need to configure your project for arduino and **Eclipse IDE for C/C++**:
 
 .. code-block:: bash
 
+	$ bii arduino:settings
+	Introduce board: uno
+	Arduino detected on port COM14
 	$ bii arduino:configure -G "Eclipse CDT4 - Unix Makefiles"
 	...
-	A new Eclipse project has been generated for you. Open eclipse, select "File > Import > General > Existing project into Workspace"and select folder "path/to/your/project_folder"
+	A new Eclipse project has been generated for you.
+	Open eclipse, select "File > Import > General > Existing project into Workspace"and select folder "YOUR_PROJECT_FOLDER"
 
-.. container:: infonote
 
-	It is important that you use a version of Eclipse that contains the C/C++ Toolkit. So we recommend using `Eclipse IDE for C/C++ Developers <https://www.eclipse.org/downloads/>`_.
+Depending on your OS and desired compiler you can use different Eclipse generators:
+
+* **"Eclipse CDT4 - MinGW Makefiles"** Generate with MinGW Makefiles.
+* **"Eclipse CDT4 - Unix Makefiles"** Generate with Unix Makefiles.
+
+Now your are ready to import your project into the Eclipse IDE. It is important that you use a version of Eclipse that contains the C/C++ Toolkit. So we recommend using `Eclipse IDE for C/C++ Developers <https://www.eclipse.org/downloads/>`_.
 
 
 How to import your project
