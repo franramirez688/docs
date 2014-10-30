@@ -20,6 +20,9 @@ First of all, you need to configure your project for arduino and **Eclipse IDE f
 	Open eclipse, select "File > Import > General > Existing project into Workspace"and select folder "YOUR_PROJECT_FOLDER"
 
 
+<<<<<<< HEAD
+If you have configured your project settings as in the previous example, your are ready to import your project into the Eclipse IDE. It is important that you use a version of Eclipse that contains the C/C++ Toolkit. So we recommend using `Eclipse IDE for C/C++ Developers <https://www.eclipse.org/downloads/>`_.
+=======
 Depending on your OS and desired compiler you can use different Eclipse generators:
 
 * **"Eclipse CDT4 - MinGW Makefiles"** Generate with MinGW Makefiles.
@@ -27,6 +30,7 @@ Depending on your OS and desired compiler you can use different Eclipse generato
 
 Now your are ready to import your project into the Eclipse IDE. It is important that you use a version of Eclipse that contains the C/C++ Toolkit. So we recommend using `Eclipse IDE for C/C++ Developers <https://www.eclipse.org/downloads/>`_.
 
+>>>>>>> origin
 
 How to import your project
 --------------------------
